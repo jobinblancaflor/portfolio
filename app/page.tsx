@@ -104,16 +104,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-brand-700/40 via-ink-950 to-ink-950" />
         <div className="relative mx-auto flex max-w-content flex-col gap-8 px-6 py-20 sm:px-8 sm:py-28 md:py-36 lg:flex-row lg:items-center lg:justify-between lg:py-40">
           <div className="max-w-2xl">
-            <div className="mb-6 h-24 w-24 overflow-hidden rounded-full ring-4 ring-white/15 sm:h-28 sm:w-28">
-              <Image
-                src="/headshot.png"
-                alt="Jobin Blancaflor"
-                width={112}
-                height={112}
-                priority
-                className="h-full w-full object-cover"
-              />
-            </div>
             <p className="mb-4 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-brand-200 sm:text-sm">
               Software Engineer &middot; Product-minded builder
             </p>
