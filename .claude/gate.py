@@ -33,6 +33,7 @@ PROJECT_NAMES = [
     "Gig Coins",
     "Electrohm Queue",
     "Electrohm TV",
+    "HeyJuno",
 ]
 
 CSS_IN_JS_LIBS = ["styled-components", "@emotion/react", "@emotion/styled"]

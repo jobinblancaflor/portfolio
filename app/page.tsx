@@ -16,6 +16,7 @@ const projects: Project[] = [
     slug: "quietlist",
     name: "Quietlist", // <Image src="/projects/quietlist.svg" alt="Quietlist" />
     image: "/projects/quietlist.svg",
+    url: "https://quietlist.com.au/",
     tags: ["Bubble", "Postmark", "Image Tooling"],
     problem:
       "Property owners and renters had no dedicated marketplace for listing and browsing rental properties with rich, image-heavy listings.",
@@ -40,6 +41,7 @@ const projects: Project[] = [
     slug: "parianlabs",
     name: "Parian Labs", // <Image src="/projects/parianlabs.svg" alt="Parian Labs" />
     image: "/projects/parianlabs.svg",
+    url: "https://parianlabs.com/",
     tags: ["Bubble", "TensorFlow", "Computer Vision", "Stripe"],
     problem:
       "A fitness product needed real-time, camera-based motion tracking — well outside what a no-code platform supports out of the box.",
@@ -52,6 +54,7 @@ const projects: Project[] = [
     slug: "pattayarentacar",
     name: "Pattaya Rent a Car", // <Image src="/projects/pattayarentacar.svg" alt="Pattaya Rent a Car" />
     image: "/projects/pattayarentacar.svg",
+    url: "https://pattayarentacar.com/",
     tags: ["Bubble", "Google Sheets API", "SendGrid"],
     problem:
       "A car rental marketplace needed reliable date-range availability booking against an inventory workflow already run through Google Sheets.",
@@ -64,6 +67,7 @@ const projects: Project[] = [
     slug: "fieldops",
     name: "FieldOps / Conserva", // <Image src="/projects/fieldops.svg" alt="FieldOps / Conserva" />
     image: "/projects/fieldops.svg",
+    url: "https://fieldops.conservanow.com/",
     tags: ["Bubble", "Xano", "Make.com", "GoHighLevel"],
     problem:
       "A field-services business needed a CRM tying together leads, scheduling, and automations instead of stitching together disconnected tools.",
@@ -121,6 +125,19 @@ const projects: Project[] = [
       "Built the Electrohm Haus TV web app for streaming live channels and deployed it on Vercel.",
     outcome:
       "A live streaming site, publicly available on the web.",
+  },
+  {
+    slug: "heyjuno",
+    name: "HeyJuno", // <Image src="/projects/heyjuno.svg" alt="HeyJuno" />
+    image: "/projects/heyjuno.svg",
+    url: "https://www.heyjuno.co/",
+    tags: ["Bubble", "Custom Plugin", "OTP"],
+    problem:
+      "An AI-driven qualitative research platform needed one-time-passcode (OTP) verification built into its Bubble app.",
+    approach:
+      "As plugin developer, built a custom OTP plugin for the platform's Bubble app.",
+    outcome:
+      "A custom plugin powering OTP verification inside a live AI research product.",
   },
 ];
 
@@ -201,7 +218,7 @@ export default function Home() {
               <p className="mt-1 text-xs text-ink-300 sm:text-sm">years building with Bubble.io</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">9</p>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">10</p>
               <p className="mt-1 text-xs text-ink-300 sm:text-sm">featured projects</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
@@ -274,7 +291,7 @@ export default function Home() {
               Projects
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-600 sm:text-lg">
-              Nine projects I&rsquo;ve built &mdash; from marketplaces and booking
+              Ten projects I&rsquo;ve built &mdash; from marketplaces and booking
               systems to emergency assistance, live queues, streaming, and
               AI-powered products.
             </p>

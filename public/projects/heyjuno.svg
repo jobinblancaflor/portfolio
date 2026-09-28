@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="640" cy="120" r="140" fill="#ffffff" opacity="0.08"/>
+  <circle cx="120" cy="420" r="180" fill="#0b0f19" opacity="0.12"/>
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="80" y="200" width="260" height="16" rx="8"/>
+    <rect x="80" y="236" width="180" height="16" rx="8" opacity="0.6"/>
+    <rect x="80" y="290" width="120" height="60" rx="10" opacity="0.85"/>
+    <rect x="220" y="290" width="120" height="60" rx="10" opacity="0.55"/>
+  </g>
+  <text x="80" y="150" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">HeyJuno</text>
+</svg>
