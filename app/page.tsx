@@ -73,6 +73,16 @@ const projects: Project[] = [
   },
 ];
 
+const skills = [
+  "Low-code / No-code Development",
+  "Bubble.io",
+  "PHP",
+  "JavaScript",
+  "Databases",
+  "Payment Gateways",
+  "AI Automation",
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-ink-50">
@@ -159,6 +169,15 @@ export default function Home() {
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
               How I work
             </h2>
+            <div className="relative mt-8 aspect-square w-full max-w-xs overflow-hidden rounded-3xl shadow-card ring-1 ring-ink-100 md:max-w-none">
+              <Image
+                src="/headshot.png"
+                alt="Jobin Blancaflor"
+                fill
+                sizes="(min-width: 768px) 30vw, 320px"
+                className="object-cover"
+              />
+            </div>
           </div>
           <div className="space-y-5 text-base leading-relaxed text-ink-700 sm:text-lg">
             <p>
@@ -168,18 +187,29 @@ export default function Home() {
               nights on-call learning what &ldquo;production-ready&rdquo; actually means.
             </p>
             <p>
-              My toolkit centers on TypeScript, React and Next.js on the front end,
-              Node.js and Python on the back end, and Postgres or cloud-native data
-              stores underneath. But the constant across every project has been the
-              same: talk to the people who&rsquo;ll use the thing, ship in small
-              increments, and measure whether it actually solved the problem.
+              I build marketplaces, booking platforms, CRMs, and AI-powered products
+              using a mix of low-code/no-code and hand-written code &mdash; Bubble.io
+              for speed, PHP and JavaScript where custom logic is needed, plus the
+              databases, payment gateways, and automations that make them run in
+              production. The constant across every project: talk to the people who
+              will use the thing, ship in small increments, and measure whether it
+              actually solved the problem.
             </p>
-            <p>
-              Outside of client work, I mentor early-career engineers and contribute to
-              a couple of open-source tooling projects &mdash; both because I learn a
-              lot doing it, and because the best code I&rsquo;ve written came from
-              conversations with people who saw the problem differently than I did.
-            </p>
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-brand-600">
+                What I work with
+              </h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <li
+                    key={skill}
+                    className="rounded-full bg-brand-50 px-3 py-1.5 text-sm font-medium text-brand-700"
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
