@@ -13,6 +13,7 @@ Run manually:  python3 .claude/gate.py
 Also wired as a Stop hook via .claude/settings.json where supported.
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -83,9 +84,13 @@ def check_build(failures):
     if not (ROOT / "node_modules").exists():
         failures.append("node_modules missing — run `npm install` before the gate can verify the build.")
         return
+    # Separate distDir: the Stop hook fires this while `next dev` may be running,
+    # and building into .next would corrupt the dev server's cache.
+    env = {**os.environ, "NEXT_DIST_DIR": ".next-gate"}
     result = subprocess.run(
         ["npm", "run", "build"],
         cwd=ROOT,
+        env=env,
         capture_output=True,
         text=True,
         timeout=600,
