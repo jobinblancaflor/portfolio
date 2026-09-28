@@ -142,20 +142,20 @@ export default function Home() {
           </div>
           <div className="grid w-full max-w-sm grid-cols-2 gap-4 self-center text-center sm:max-w-md md:grid-cols-2 lg:w-auto">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">8+</p>
-              <p className="mt-1 text-xs text-ink-300 sm:text-sm">years shipping production software</p>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">12+</p>
+              <p className="mt-1 text-xs text-ink-300 sm:text-sm">years in software &amp; IT</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">6+</p>
+              <p className="mt-1 text-xs text-ink-300 sm:text-sm">years building with Bubble.io</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <p className="font-display text-3xl font-bold text-white sm:text-4xl">5</p>
-              <p className="mt-1 text-xs text-ink-300 sm:text-sm">flagship products launched</p>
+              <p className="mt-1 text-xs text-ink-300 sm:text-sm">featured client projects</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">30+</p>
-              <p className="mt-1 text-xs text-ink-300 sm:text-sm">engineers mentored</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">99.9%</p>
-              <p className="mt-1 text-xs text-ink-300 sm:text-sm">uptime on systems I own</p>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">Certified</p>
+              <p className="mt-1 text-xs text-ink-300 sm:text-sm">Bubble.io Developer, 2024</p>
             </div>
           </div>
         </div>
@@ -220,12 +220,11 @@ export default function Home() {
           <div className="max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-wider text-brand-600">Selected work</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
-              Case studies
+              Projects
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-600 sm:text-lg">
-              Five projects, five different problems &mdash; each one a snapshot of
-              taking something ambiguous from &ldquo;we have a problem&rdquo; to
-              &ldquo;this is measurably better.&rdquo;
+              Five client platforms I&rsquo;ve built &mdash; from marketplaces and
+              booking systems to AI-powered products and CRMs.
             </p>
           </div>
 
