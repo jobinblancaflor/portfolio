@@ -80,13 +80,14 @@ const projects: Project[] = [
     slug: "securesignal",
     name: "Secure Signal", // <Image src="/projects/securesignal.svg" alt="Secure Signal" />
     image: "/projects/securesignal.svg",
+    url: "https://safe-drive-phi.vercel.app/",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Firebase", "Android (Kotlin)", "Leaflet Maps"],
     problem:
-      "People in an emergency need a fast way to call for help and share exactly where they are.",
+      "Riders in an emergency need a fast way to raise an SOS that shares their live location and alerts their contacts and a monitoring team.",
     approach:
-      "Built the emergency assistant system as a full-stack developer: a Next.js, React and TypeScript web app styled with Tailwind, a Node.js backend, Supabase and Firebase for backend services, a native Android app in Kotlin, and Leaflet maps for location.",
+      "Built the emergency assistant system as a full-stack developer: a Next.js, React and TypeScript web app styled with Tailwind, with role-based dashboards for admins and authority staff, a Node.js backend, Supabase and Firebase for backend services, a native Android app in Kotlin, and Leaflet maps for live location.",
     outcome:
-      "A working emergency assistance system spanning web and Android, with map-based location built in.",
+      "A live SOS monitoring platform that turns a rider's signal into location sharing, contact notification, and dispatcher response.",
   },
   {
     slug: "gigcoins",
