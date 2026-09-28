@@ -22,7 +22,7 @@ that's the old scaffold; this one supersedes it.
 - LinkedIn: `https://www.linkedin.com/in/jobin-blancaflor-760191161/` (real)
 - GitHub: `https://github.com/jobinblancaflor` (real)
 
-## Real projects (5, real client work)
+## Real projects (originally 5, now 9)
 Selected from 6 supplied projects, keeping the 5 highest portfolio-strength
 ones (dropped HeyJuno — 3-star, smallest scope — to match the 5-project
 hard requirement):
@@ -31,6 +31,8 @@ hard requirement):
 - **Parian Labs** — Fitness/AI/Computer Vision — Main Developer — Bubble, Custom Plugins, TensorFlow, Camera, Postmark, Stripe
 - **Pattaya Rent a Car** — Car Rental Marketplace — Developer — Bubble, Custom Date Picker, Google Sheets, SendGrid
 - **FieldOps / Conserva** — CRM — Developer — Bubble, CanvasTemplate, GHL, Make.com, Xano, Manus.ai
+
+Four more added later (9 total): Secure Signal (full-stack: Next.js, Supabase, Firebase, Kotlin, Leaflet), Gig Coins (gig-coin.vercel.app), Electrohm Queue (local queue system, SQLite), Electrohm TV (electrohm-haus-tv.vercel.app). `gate.py` PROJECT_NAMES lists all 9.
 
 Case-study copy (problem/approach/outcome) is written from the supplied
 role/category/tech-stack facts only — no invented metrics or numbers, since
@@ -53,7 +55,7 @@ isn't. All of the following MUST be true for the gate to pass:
    as an `<a href="...">`.
 3. Positioning/tagline copy present near the top (a short one-line value
    statement in a heading, not just a name).
-4. All 5 project names present as text.
+4. All 9 project names present as text.
 5. CV/resume link present, pointing at a `.pdf`.
 6. LinkedIn link present as `<a href="...linkedin.com...">`.
 7. GitHub link present as `<a href="...github.com...">`.
@@ -62,7 +64,7 @@ isn't. All of the following MUST be true for the gate to pass:
    Next.js App Router, so not separately checked).
 9. A contact section present (`id="contact"` or a heading containing
    "Contact").
-10. Each of the 5 projects has an associated image — `<img>` or Next.js
+10. Each of the 9 projects has an associated image — `<img>` or Next.js
     `<Image>` — not text-only project cards.
 11. No plain `<style>` blocks and no CSS-in-JS library in `package.json`
     (styling must be Tailwind utility classes).

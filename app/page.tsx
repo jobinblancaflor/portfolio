@@ -4,6 +4,7 @@ type Project = {
   slug: string;
   name: string;
   image: string;
+  url?: string;
   tags: string[];
   problem: string;
   approach: string;
@@ -70,6 +71,56 @@ const projects: Project[] = [
       "Built the CRM on Bubble with CanvasTemplate, connected GoHighLevel and Make.com for automations, a Xano backend for structured data, and Manus.ai for AI-assisted workflows.",
     outcome:
       "An operational CRM running the business's day-to-day lead and field-scheduling workflows.",
+  },
+  {
+    slug: "securesignal",
+    name: "Secure Signal", // <Image src="/projects/securesignal.svg" alt="Secure Signal" />
+    image: "/projects/securesignal.svg",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Firebase", "Android (Kotlin)", "Leaflet Maps"],
+    problem:
+      "People in an emergency need a fast way to call for help and share exactly where they are.",
+    approach:
+      "Built the emergency assistant system as a full-stack developer: a Next.js, React and TypeScript web app styled with Tailwind, a Node.js backend, Supabase and Firebase for backend services, a native Android app in Kotlin, and Leaflet maps for location.",
+    outcome:
+      "A working emergency assistance system spanning web and Android, with map-based location built in.",
+  },
+  {
+    slug: "gigcoins",
+    name: "Gig Coins", // <Image src="/projects/gigcoins.svg" alt="Gig Coins" />
+    image: "/projects/gigcoins.svg",
+    url: "https://gig-coin.vercel.app/",
+    tags: ["Web App", "QR Codes", "Live Request Queue", "Vercel"],
+    problem:
+      "Live musicians playing bars, cafés, and events had no single place to manage song libraries, setlists, and audience requests.",
+    approach:
+      "Built a web app where performers keep a song library, start a gig, and share a QR code. Fans send requests from their phones with no account or download, and they land in a live request queue with tip tracking.",
+    outcome:
+      "A live product for solo performers and small bands, deployed on Vercel.",
+  },
+  {
+    slug: "electrohmqueue",
+    name: "Electrohm Queue", // <Image src="/projects/electrohmqueue.svg" alt="Electrohm Queue" />
+    image: "/projects/electrohmqueue.svg",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "SQLite"],
+    problem:
+      "On-site businesses needed a simple system to manage customers waiting in line.",
+    approach:
+      "Built a local queue-management system with Next.js, React, TypeScript and Tailwind CSS on Node.js, storing its data locally in SQLite.",
+    outcome:
+      "A self-contained queue system that runs locally, without depending on a hosted database.",
+  },
+  {
+    slug: "electrohmtv",
+    name: "Electrohm TV", // <Image src="/projects/electrohmtv.svg" alt="Electrohm TV" />
+    image: "/projects/electrohmtv.svg",
+    url: "https://electrohm-haus-tv.vercel.app/",
+    tags: ["Live TV", "Web App", "Vercel"],
+    problem:
+      "Viewers wanted one place to watch live channels from around the world.",
+    approach:
+      "Built the Electrohm Haus TV web app for streaming live channels and deployed it on Vercel.",
+    outcome:
+      "A live streaming site, publicly available on the web.",
   },
 ];
 
@@ -150,8 +201,8 @@ export default function Home() {
               <p className="mt-1 text-xs text-ink-300 sm:text-sm">years building with Bubble.io</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">5</p>
-              <p className="mt-1 text-xs text-ink-300 sm:text-sm">featured client projects</p>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">9</p>
+              <p className="mt-1 text-xs text-ink-300 sm:text-sm">featured projects</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <p className="font-display text-3xl font-bold text-white sm:text-4xl">Certified</p>
@@ -223,8 +274,9 @@ export default function Home() {
               Projects
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink-600 sm:text-lg">
-              Five client platforms I&rsquo;ve built &mdash; from marketplaces and
-              booking systems to AI-powered products and CRMs.
+              Nine projects I&rsquo;ve built &mdash; from marketplaces and booking
+              systems to emergency assistance, live queues, streaming, and
+              AI-powered products.
             </p>
           </div>
 
@@ -277,6 +329,16 @@ export default function Home() {
                         <dd className="text-brand-700">{project.outcome}</dd>
                       </div>
                     </dl>
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-brand-600 transition hover:text-brand-700"
+                      >
+                        Visit live site <span aria-hidden="true">&rarr;</span>
+                      </a>
+                    )}
                   </div>
                 </article>
               );

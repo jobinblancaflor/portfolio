@@ -29,6 +29,10 @@ PROJECT_NAMES = [
     "Parian Labs",
     "Pattaya Rent a Car",
     "FieldOps / Conserva",
+    "Secure Signal",
+    "Gig Coins",
+    "Electrohm Queue",
+    "Electrohm TV",
 ]
 
 CSS_IN_JS_LIBS = ["styled-components", "@emotion/react", "@emotion/styled"]
